@@ -8,10 +8,6 @@ st.header("CAR PRICE PREDICTION")
 from PIL import Image
 img=Image.open("araba23-696x464.jpg")
 st.image(img, width=400)
-
-
-
-
 st.subheader("Please select the features of the car.")
 
 make = st.selectbox("What is the make of your car?",['BMW', 'Volkswagen', 'Renault', 'Peugeot', 'Toyota', 'Opel',
@@ -26,7 +22,7 @@ gear=st.selectbox("What is the gearing type of your car", ['Automatic', 'Manual'
 
 offerType=st.selectbox("What is the offer type of your car", ['Used',   'New', 'Demonstration',"Employee's car","Pre-registered"])
 
-fuel=stselectbox("What is the fuel type of your car", ['Diesel', 'Gasolinel', "Gas",'Electric'])
+fuel=st.selectbox("What is the fuel type of your car", ['Diesel', 'Gasolinel', "Gas",'Electric'])
 
 mileage = st.slider("What is the mileage of your car?", 0, 300000, step=5000)
 
@@ -83,6 +79,7 @@ import pandas as pd
 df2=pd.read_csv("autoscout24-germany-dataset.csv")
 df2.head()
 st.table(df2.head())
+
 
 st.balloons()
 
