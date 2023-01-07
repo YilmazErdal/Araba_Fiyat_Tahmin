@@ -12,9 +12,9 @@ st.image(img, width=400)
 
 
 
-st.sidebar.subheader("Please select the features of the car.")
+st.subheader("Please select the features of the car.")
 
-make = st.sidebar.selectbox("What is the make of your car?",['BMW', 'Volkswagen', 'Renault', 'Peugeot', 'Toyota', 'Opel',
+make = st.selectbox("What is the make of your car?",['BMW', 'Volkswagen', 'Renault', 'Peugeot', 'Toyota', 'Opel',
        'Mazda', 'Ford', 'Chevrolet', 'Audi', 'Kia', 'Dacia',
        'Mercedes-Benz', 'MINI', 'Hyundai', 'SEAT', 'Skoda', 'Citroen',
        'Suzuki', 'SsangYong', 'smart', 'Fiat', 'Nissan', 'Honda',
@@ -22,17 +22,17 @@ make = st.sidebar.selectbox("What is the make of your car?",['BMW', 'Volkswagen'
        'Lada', 'Cupra'])
 
 
-gear=st.sidebar.selectbox("What is the gearing type of your car", ['Automatic', 'Manual', 'Semi-automatic'])
+gear=st.selectbox("What is the gearing type of your car", ['Automatic', 'Manual', 'Semi-automatic'])
 
-offerType=st.sidebar.selectbox("What is the offer type of your car", ['Used',   'New', 'Demonstration',"Employee's car","Pre-registered"])
+offerType=st.selectbox("What is the offer type of your car", ['Used',   'New', 'Demonstration',"Employee's car","Pre-registered"])
 
-fuel=st.sidebar.selectbox("What is the fuel type of your car", ['Diesel', 'Gasolinel', "Gas",'Electric'])
+fuel=stselectbox("What is the fuel type of your car", ['Diesel', 'Gasolinel', "Gas",'Electric'])
 
-mileage = st.sidebar.slider("What is the mileage of your car?", 0, 300000, step=5000)
+mileage = st.slider("What is the mileage of your car?", 0, 300000, step=5000)
 
-hp = st.sidebar.slider("What is the hp of your car?", 1, 850, step=5)
+hp = st.slider("What is the hp of your car?", 1, 850, step=5)
 
-year = st.sidebar.slider("What is the age of your car?", 0, 30, step=1)
+year = st.slider("What is the age of your car?", 0, 30, step=1)
 
 
 my_dict = {
